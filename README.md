@@ -6,6 +6,7 @@ A homebrew tap for Zenith's projects &amp; other modding tools.
 ```sh
 # Add the tap
 brew tap zenith-team/tap
+brew trust zenith-team/tap
 
 # Install casks (Example: Pyamoto)
 brew install pyamoto
