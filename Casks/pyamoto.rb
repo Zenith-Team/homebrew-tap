@@ -1,6 +1,6 @@
 cask "pyamoto" do
-  version "1.0.1"
-  sha256 "5bb43c8ea7407ff0ac1577ac41e4f8f40f4f70710f269d3827f887a1e2e4d1a8"
+  version "1.2"
+  sha256 "fd824f2e7e3bee25b0f8d870640a5aff33c2f6c7cbf2fb4786555a524ca89f32"
 
   url "https://github.com/Zenith-Team/Pyamoto/releases/download/v#{version}/Pyamoto-v#{version}-macOS-universal.zip"
   name "Pyamoto"
