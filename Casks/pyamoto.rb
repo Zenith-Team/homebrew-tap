@@ -9,9 +9,10 @@ cask "pyamoto" do
 
   app "Pyamoto.app"
 
-  postflight do
-    system_command "xattr",
-                   args: ["-r", "-d", "com.apple.quarantine", "#{appdir}/Pyamoto.app"]
+  postflight_steps do
+    run "/usr/bin/xattr",
+      args: ["-dr", "com.apple.quarantine", "{{appdir}}/Pyamoto.app"],
+      must_succeed: false
   end
 
   zap trash: "~/Library/Application Support/Pyamoto"
